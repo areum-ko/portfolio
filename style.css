@@ -273,7 +273,7 @@ p {
 
 /* Skills */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: var(--color-blue);
 }
 .skillset {
   display: flex;
@@ -305,7 +305,7 @@ p {
 }
 .skill__value {
   height: 24px;
-  background-color: var(--color-blue);
+  background-color: var(--color-orange);
   border-radius: 30px;
 }
 .skillset__right {
@@ -427,7 +427,14 @@ p {
   background-image: url("imgs/projects/project_thumb12.jpg");
   background-size: cover;
 }
-
+.p_img13 {
+  background-image: url("imgs/projects/project_thumb15.jpg");
+  background-size: cover;
+}
+.p_img14 {
+  background-image: url("imgs/projects/project_thumb16.jpg");
+  background-size: cover;
+}
 .project.invisible {
   display: none;
 }
