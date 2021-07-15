@@ -22,7 +22,7 @@
   /* Font size */
   --font-xlarge: 60px;
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 24px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -76,6 +76,7 @@ h1 {
   color: var(--color-black);
   margin: 16px 0;
   letter-spacing: -0.05em;
+  padding-bottom: 30px;
 }
 h1 .h1_emoji {
   width: 50px;
@@ -84,7 +85,7 @@ h1 .h1_emoji {
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-dark-white);
   margin: 8px 0;
 }
 
@@ -217,10 +218,17 @@ p {
 /* About */
 .about__majors {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 80px 0;
 }
-
+.about__majors .major {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid #eee;
+  border-radius: 8%;
+  padding-top: 25px;
+}
 .major__icon {
   width: 100px;
   height: 100px;
@@ -230,7 +238,7 @@ p {
   color: var(--color-black);
   /* border: 1px solid var(--color-grey); */
   border-radius: 50%;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .major__icon i {
   transition: all var(--animation-duration) ease;
@@ -254,6 +262,13 @@ p {
 .job {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
+}
+.job__logo {
+  width: 150px;
+  height: 80px;
+  border: 1px solid #eee;
+  margin-right: 10px;
 }
 .job__description {
   margin: 0 16px;
@@ -265,15 +280,15 @@ p {
 }
 .job__name {
   color: var(--color-black);
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
 }
 .job__period {
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
 }
 
 /* Skills */
 #skills {
-  background-color: var(--color-blue);
+  background-color: #efefef;
 }
 .skillset {
   display: flex;
@@ -286,26 +301,25 @@ p {
 }
 .skillset__left {
   flex-basis: 100%;
-  padding: 20px 40px;
 }
 .skill__description {
-  display: flex;
-  justify-content: space-between;
-  font-size: var(--font-regular);
-  font-weight: var(--weight-black);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
 }
 .skill {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 36px;
 }
 .skill__bar {
-  width: 100%;
+  width: 80%;
   height: 24px;
-  background-color: var(--color-white);
+  background-color: #dedede;
   border-radius: 30px;
 }
 .skill__value {
   height: 24px;
-  background-color: var(--color-orange);
+  background-color: var(--color-blue);
   border-radius: 30px;
 }
 .skillset__right {
@@ -329,7 +343,7 @@ p {
   position: relative;
   width: 100%;
   background-color: var(--color-light-white);
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   padding: 12px 20px;
   margin: 1px;
@@ -351,7 +365,7 @@ p {
   display: inline-block;
   opacity: 0;
   background-color: var(--color-orange);
-  color: var(--color-white);
+  color: var(--color-black);
   border-radius: 50%;
   width: 18px;
   height: 18px;
